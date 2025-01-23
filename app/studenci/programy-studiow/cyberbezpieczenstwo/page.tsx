@@ -1,6 +1,6 @@
-import { Header } from "../../../components/header"
-import { Footer } from "../../../components/footer"
-import { Shield, Book, Clock, GraduationCap } from "lucide-react"
+import { Header } from "../../@/components/header";
+import { Footer } from "../../@/components/footer";
+import { Shield, Book, Clock, GraduationCap } from "lucide-react";
 
 const semesters = [
   {
@@ -34,7 +34,7 @@ const semesters = [
     ],
   },
   // Add more semesters as needed
-]
+];
 
 export default function CybersecurityProgram() {
   return (
@@ -42,7 +42,9 @@ export default function CybersecurityProgram() {
       <Header />
       <main className="flex-grow">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <h1 className="text-4xl font-bold mb-8">Program Studiów: Cyberbezpieczeństwo</h1>
+          <h1 className="text-4xl font-bold mb-8">
+            Program Studiów: Cyberbezpieczeństwo
+          </h1>
 
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-4 flex items-center">
@@ -50,9 +52,11 @@ export default function CybersecurityProgram() {
             </h2>
             <div className="bg-white shadow rounded-lg p-6">
               <p className="mb-4">
-                Kierunek Cyberbezpieczeństwo przygotowuje studentów do pracy w dynamicznie rozwijającej się branży
-                bezpieczeństwa informatycznego. Program łączy teorię z praktyką, zapewniając kompleksowe zrozumienie
-                zagadnień związanych z ochroną systemów informatycznych, sieci i danych.
+                Kierunek Cyberbezpieczeństwo przygotowuje studentów do pracy w
+                dynamicznie rozwijającej się branży bezpieczeństwa
+                informatycznego. Program łączy teorię z praktyką, zapewniając
+                kompleksowe zrozumienie zagadnień związanych z ochroną systemów
+                informatycznych, sieci i danych.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                 <div className="flex items-center">
@@ -76,7 +80,9 @@ export default function CybersecurityProgram() {
             <div className="space-y-6">
               {semesters.map((semester, index) => (
                 <div key={index} className="bg-white shadow rounded-lg p-6">
-                  <h3 className="text-xl font-semibold mb-4">{semester.name}</h3>
+                  <h3 className="text-xl font-semibold mb-4">
+                    {semester.name}
+                  </h3>
                   <ul className="list-disc list-inside space-y-2">
                     {semester.subjects.map((subject, subIndex) => (
                       <li key={subIndex}>{subject}</li>
@@ -90,7 +96,10 @@ export default function CybersecurityProgram() {
           <section>
             <h2 className="text-2xl font-bold mb-4">Perspektywy Zawodowe</h2>
             <div className="bg-white shadow rounded-lg p-6">
-              <p className="mb-4">Absolwenci kierunku Cyberbezpieczeństwo są przygotowani do pracy na stanowiskach:</p>
+              <p className="mb-4">
+                Absolwenci kierunku Cyberbezpieczeństwo są przygotowani do pracy
+                na stanowiskach:
+              </p>
               <ul className="list-disc list-inside space-y-2">
                 <li>Specjalista ds. bezpieczeństwa informatycznego</li>
                 <li>Analityk bezpieczeństwa</li>
@@ -105,6 +114,5 @@ export default function CybersecurityProgram() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
-

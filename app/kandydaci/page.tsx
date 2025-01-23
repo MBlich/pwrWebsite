@@ -1,26 +1,41 @@
-import { Header } from "../components/header"
-import { Footer } from "../components/footer"
-import Link from "next/link"
-import { BookOpen, GraduationCap, Globe } from "lucide-react"
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import Link from "next/link";
+import { BookOpen, GraduationCap, Globe } from "lucide-react";
 
 const studyPrograms = {
   bachelor: [
     { name: "Informatyka", description: "Studia inżynierskie, 7 semestrów" },
-    { name: "Telekomunikacja", description: "Studia inżynierskie, 7 semestrów" },
-    { name: "Cyberbezpieczeństwo", description: "Studia inżynierskie, 7 semestrów" },
-    { name: "Inżynieria Systemów", description: "Studia inżynierskie, 7 semestrów" },
+    {
+      name: "Telekomunikacja",
+      description: "Studia inżynierskie, 7 semestrów",
+    },
+    {
+      name: "Cyberbezpieczeństwo",
+      description: "Studia inżynierskie, 7 semestrów",
+    },
+    {
+      name: "Inżynieria Systemów",
+      description: "Studia inżynierskie, 7 semestrów",
+    },
   ],
   master: [
     { name: "Informatyka", description: "Studia magisterskie, 3 semestry" },
     { name: "Telekomunikacja", description: "Studia magisterskie, 3 semestry" },
-    { name: "Cyberbezpieczeństwo", description: "Studia magisterskie, 3 semestry" },
+    {
+      name: "Cyberbezpieczeństwo",
+      description: "Studia magisterskie, 3 semestry",
+    },
   ],
   english: [
-    { name: "Computer Science", description: "Bachelor of Science, 7 semesters" },
+    {
+      name: "Computer Science",
+      description: "Bachelor of Science, 7 semesters",
+    },
     { name: "Computer Science", description: "Master of Science, 3 semesters" },
     { name: "Cybersecurity", description: "Master of Science, 3 semesters" },
   ],
-}
+};
 
 export default function Candidates() {
   return (
@@ -40,7 +55,10 @@ export default function Candidates() {
                 <div key={index} className="bg-white shadow rounded-lg p-4">
                   <h3 className="font-semibold">{program.name}</h3>
                   <p className="text-gray-600">{program.description}</p>
-                  <Link href="#" className="text-[#DB3B2B] hover:underline text-sm">
+                  <Link
+                    href="#"
+                    className="text-[#DB3B2B] hover:underline text-sm"
+                  >
                     Więcej informacji
                   </Link>
                 </div>
@@ -58,7 +76,10 @@ export default function Candidates() {
                 <div key={index} className="bg-white shadow rounded-lg p-4">
                   <h3 className="font-semibold">{program.name}</h3>
                   <p className="text-gray-600">{program.description}</p>
-                  <Link href="#" className="text-[#DB3B2B] hover:underline text-sm">
+                  <Link
+                    href="#"
+                    className="text-[#DB3B2B] hover:underline text-sm"
+                  >
                     Więcej informacji
                   </Link>
                 </div>
@@ -76,7 +97,10 @@ export default function Candidates() {
                 <div key={index} className="bg-white shadow rounded-lg p-4">
                   <h3 className="font-semibold">{program.name}</h3>
                   <p className="text-gray-600">{program.description}</p>
-                  <Link href="#" className="text-[#DB3B2B] hover:underline text-sm">
+                  <Link
+                    href="#"
+                    className="text-[#DB3B2B] hover:underline text-sm"
+                  >
                     More information
                   </Link>
                 </div>
@@ -88,10 +112,14 @@ export default function Candidates() {
             <h2 className="text-2xl font-bold mb-4">Rekrutacja</h2>
             <div className="bg-white shadow rounded-lg p-6">
               <p className="mb-4">
-                Informacje o procesie rekrutacji, wymaganych dokumentach i terminach znajdziesz na stronie Rekrutacja
-                Politechniki Wrocławskiej.
+                Informacje o procesie rekrutacji, wymaganych dokumentach i
+                terminach znajdziesz na stronie Rekrutacja Politechniki
+                Wrocławskiej.
               </p>
-              <Link href="https://rekrutacja.pwr.edu.pl" className="text-[#DB3B2B] hover:underline">
+              <Link
+                href="https://rekrutacja.pwr.edu.pl"
+                className="text-[#DB3B2B] hover:underline"
+              >
                 Przejdź do strony Rekrutacja PWr
               </Link>
             </div>
@@ -100,6 +128,5 @@ export default function Candidates() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
-

@@ -1,6 +1,6 @@
-import { Header } from "../../components/header"
-import { Footer } from "../../components/footer"
-import { Calendar, FileText, Users } from "lucide-react"
+import { Header } from "../@/components/header";
+import { Footer } from "../@/components/footer";
+import { Calendar, FileText, Users } from "lucide-react";
 
 const diplomaSchedule = [
   {
@@ -23,7 +23,7 @@ const diplomaSchedule = [
     inEngineerStudies: "kwiecień",
     inMasterStudies: "wrzesień",
   },
-]
+];
 
 export default function DefenseSchedule() {
   return (
@@ -55,10 +55,19 @@ export default function DefenseSchedule() {
                 </thead>
                 <tbody className="divide-y divide-gray-200">
                   {diplomaSchedule.map((item, index) => (
-                    <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{item.stage}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{item.inEngineerStudies}</td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{item.inMasterStudies}</td>
+                    <tr
+                      key={index}
+                      className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
+                    >
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                        {item.stage}
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        {item.inEngineerStudies}
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                        {item.inMasterStudies}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
@@ -72,7 +81,9 @@ export default function DefenseSchedule() {
               Wymagane dokumenty
             </h2>
             <ul className="list-disc list-inside space-y-2 bg-white shadow-md rounded-lg p-6">
-              <li>Praca dyplomowa w wersji elektronicznej (PDF) i drukowanej</li>
+              <li>
+                Praca dyplomowa w wersji elektronicznej (PDF) i drukowanej
+              </li>
               <li>Oświadczenie o samodzielnym wykonaniu pracy</li>
               <li>Karta obiegowa</li>
               <li>4 zdjęcia formatu 4,5 x 6,5 cm</li>
@@ -98,6 +109,5 @@ export default function DefenseSchedule() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
-
