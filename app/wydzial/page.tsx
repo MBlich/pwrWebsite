@@ -1,18 +1,18 @@
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+import { Header } from "../components/header"
+import { Footer } from "../components/footer"
 
 const authorities = [
   { name: "Prof. dr hab. inż. Jan Kowalski", role: "Dziekan" },
   { name: "Dr hab. inż. Anna Nowak", role: "Prodziekan ds. Kształcenia" },
   { name: "Dr hab. inż. Piotr Wiśniewski", role: "Prodziekan ds. Nauki" },
-];
+]
 
 const departments = [
   "Katedra Informatyki",
   "Katedra Telekomunikacji",
   "Katedra Systemów Informatycznych",
   "Katedra Sztucznej Inteligencji",
-];
+]
 
 export default function Faculty() {
   return (
@@ -20,9 +20,7 @@ export default function Faculty() {
       <Header />
       <main className="flex-grow">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <h1 className="text-4xl font-bold mb-8">
-            Wydział Informatyki i Telekomunikacji
-          </h1>
+          <h1 className="text-4xl font-bold mb-8">Wydział Informatyki i Telekomunikacji</h1>
 
           <section id="wladze" className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Władze</h2>
@@ -38,10 +36,7 @@ export default function Faculty() {
 
           <section id="pracownicy" className="mb-12">
             <h2 className="text-2xl font-bold mb-4">Pracownicy</h2>
-            <p>
-              Lista pracowników naukowych i dydaktycznych wydziału jest dostępna
-              w systemie USOS.
-            </p>
+            <p>Lista pracowników naukowych i dydaktycznych wydziału jest dostępna w systemie USOS.</p>
             <a href="#" className="text-[#DB3B2B] hover:underline">
               Przejdź do systemu USOS
             </a>
@@ -71,5 +66,6 @@ export default function Faculty() {
       </main>
       <Footer />
     </div>
-  );
+  )
 }
+

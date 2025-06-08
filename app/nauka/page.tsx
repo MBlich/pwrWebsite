@@ -1,34 +1,30 @@
-import Link from "next/link";
-import { FlaskRoundIcon as Flask, Cpu, Shield, Globe, Zap } from "lucide-react";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+import { Header } from "../components/header"
+import { Footer } from "../components/footer"
+import Link from "next/link"
+import { FlaskRoundIcon as Flask, Cpu, Shield, Globe, Zap } from "lucide-react"
 
 const researchAreas = [
   {
     icon: <Cpu className="w-8 h-8 text-[#DB3B2B]" />,
     name: "Sztuczna Inteligencja i Uczenie Maszynowe",
-    description:
-      "Badania nad zaawansowanymi algorytmami AI i ich zastosowaniami w różnych dziedzinach.",
+    description: "Badania nad zaawansowanymi algorytmami AI i ich zastosowaniami w różnych dziedzinach.",
   },
   {
     icon: <Shield className="w-8 h-8 text-[#DB3B2B]" />,
     name: "Cyberbezpieczeństwo",
-    description:
-      "Rozwój nowych metod ochrony systemów informatycznych i sieci przed zagrożeniami.",
+    description: "Rozwój nowych metod ochrony systemów informatycznych i sieci przed zagrożeniami.",
   },
   {
     icon: <Globe className="w-8 h-8 text-[#DB3B2B]" />,
     name: "Internet Rzeczy (IoT)",
-    description:
-      "Badania nad inteligentnymi systemami połączonych urządzeń i ich zastosowaniami.",
+    description: "Badania nad inteligentnymi systemami połączonych urządzeń i ich zastosowaniami.",
   },
   {
     icon: <Zap className="w-8 h-8 text-[#DB3B2B]" />,
     name: "Przetwarzanie Danych i Big Data",
-    description:
-      "Rozwój metod analizy i przetwarzania ogromnych zbiorów danych.",
+    description: "Rozwój metod analizy i przetwarzania ogromnych zbiorów danych.",
   },
-];
+]
 
 const researchProjects = [
   {
@@ -38,19 +34,17 @@ const researchProjects = [
     leader: "prof. dr hab. inż. Anna Nowak",
   },
   {
-    title:
-      "CyberShield: Zaawansowane Systemy Ochrony Infrastruktury Krytycznej",
+    title: "CyberShield: Zaawansowane Systemy Ochrony Infrastruktury Krytycznej",
     description:
       "Projekt skupiający się na rozwoju innowacyjnych metod zabezpieczania infrastruktury krytycznej przed cyberatakami.",
     leader: "dr hab. inż. Piotr Kowalski",
   },
   {
     title: "SmartCity: Inteligentne Rozwiązania dla Miast Przyszłości",
-    description:
-      "Badania nad zastosowaniem technologii IoT w zarządzaniu miejską infrastrukturą i usługami.",
+    description: "Badania nad zastosowaniem technologii IoT w zarządzaniu miejską infrastrukturą i usługami.",
     leader: "dr inż. Magdalena Wiśniewska",
   },
-];
+]
 
 export default function Research() {
   return (
@@ -83,13 +77,9 @@ export default function Research() {
             <div className="space-y-6">
               {researchProjects.map((project, index) => (
                 <div key={index} className="bg-white shadow rounded-lg p-6">
-                  <h3 className="text-xl font-semibold mb-2">
-                    {project.title}
-                  </h3>
+                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                   <p className="text-gray-600 mb-4">{project.description}</p>
-                  <p className="text-sm text-gray-500">
-                    Kierownik projektu: {project.leader}
-                  </p>
+                  <p className="text-sm text-gray-500">Kierownik projektu: {project.leader}</p>
                 </div>
               ))}
             </div>
@@ -99,11 +89,9 @@ export default function Research() {
             <h2 className="text-2xl font-bold mb-4">Współpraca Naukowa</h2>
             <div className="bg-white shadow rounded-lg p-6">
               <p className="mb-4">
-                Wydział Informatyki i Telekomunikacji aktywnie współpracuje z
-                wiodącymi ośrodkami badawczymi i firmami technologicznymi w
-                kraju i za granicą. Nasze partnerstwa obejmują wspólne projekty
-                badawcze, wymianę naukową oraz organizację konferencji i
-                seminariów.
+                Wydział Informatyki i Telekomunikacji aktywnie współpracuje z wiodącymi ośrodkami badawczymi i firmami
+                technologicznymi w kraju i za granicą. Nasze partnerstwa obejmują wspólne projekty badawcze, wymianę
+                naukową oraz organizację konferencji i seminariów.
               </p>
               <Link href="#" className="text-[#DB3B2B] hover:underline">
                 Dowiedz się więcej o naszych partnerach naukowych
@@ -112,20 +100,14 @@ export default function Research() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4">
-              Publikacje i Osiągnięcia
-            </h2>
+            <h2 className="text-2xl font-bold mb-4">Publikacje i Osiągnięcia</h2>
             <div className="bg-white shadow rounded-lg p-6">
               <p className="mb-4">
-                Nasi naukowcy regularnie publikują wyniki swoich badań w
-                renomowanych czasopismach naukowych i prezentują je na
-                międzynarodowych konferencjach. Zapoznaj się z naszymi
-                najnowszymi publikacjami i osiągnięciami naukowymi.
+                Nasi naukowcy regularnie publikują wyniki swoich badań w renomowanych czasopismach naukowych i
+                prezentują je na międzynarodowych konferencjach. Zapoznaj się z naszymi najnowszymi publikacjami i
+                osiągnięciami naukowymi.
               </p>
-              <Link
-                href="/nauka/publikacje"
-                className="text-[#DB3B2B] hover:underline"
-              >
+              <Link href="/nauka/publikacje" className="text-[#DB3B2B] hover:underline">
                 Przeglądaj publikacje naukowe
               </Link>
             </div>
@@ -134,5 +116,6 @@ export default function Research() {
       </main>
       <Footer />
     </div>
-  );
+  )
 }
+

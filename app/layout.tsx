@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "Wydział Informatyki i Telekomunikacji - Politechnika Wrocławska",
   description: "Oficjalna strona Wydziału Informatyki i Telekomunikacji Politechniki Wrocławskiej",
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({

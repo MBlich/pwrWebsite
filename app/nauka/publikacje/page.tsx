@@ -1,11 +1,10 @@
-import { Header } from "../@/components/header";
-import { Footer } from "../@/components/footer";
-import { FileText, Users, Calendar } from "lucide-react";
+import { Header } from "../../components/header"
+import { Footer } from "../../components/footer"
+import { FileText, Users, Calendar } from "lucide-react"
 
 const publications = [
   {
-    title:
-      "Zaawansowane metody uczenia maszynowego w analizie danych medycznych",
+    title: "Zaawansowane metody uczenia maszynowego w analizie danych medycznych",
     authors: "Anna Nowak, Jan Kowalski, Piotr Wiśniewski",
     journal: "Journal of Medical Informatics",
     year: 2023,
@@ -26,14 +25,13 @@ const publications = [
     doi: "10.1002/def789",
   },
   {
-    title:
-      "Zastosowanie metod głębokiego uczenia w przetwarzaniu języka naturalnego",
+    title: "Zastosowanie metod głębokiego uczenia w przetwarzaniu języka naturalnego",
     authors: "Michał Lewandowski, Karolina Jabłońska",
     journal: "Computational Linguistics Review",
     year: 2022,
     doi: "10.1003/ghi012",
   },
-];
+]
 
 export default function Publications() {
   return (
@@ -78,10 +76,8 @@ export default function Publications() {
             <h2 className="text-2xl font-bold mb-4">Archiwum Publikacji</h2>
             <div className="bg-white shadow rounded-lg p-6">
               <p className="mb-4">
-                Pełne archiwum naszych publikacji naukowych jest dostępne w
-                repozytorium uczelnianym. Znajdziesz tam publikacje z
-                poprzednich lat oraz pełne teksty artykułów, do których mamy
-                prawa do udostępniania.
+                Pełne archiwum naszych publikacji naukowych jest dostępne w repozytorium uczelnianym. Znajdziesz tam
+                publikacje z poprzednich lat oraz pełne teksty artykułów, do których mamy prawa do udostępniania.
               </p>
               <a href="#" className="text-[#DB3B2B] hover:underline">
                 Przejdź do repozytorium uczelnianego
@@ -92,5 +88,6 @@ export default function Publications() {
       </main>
       <Footer />
     </div>
-  );
+  )
 }
+

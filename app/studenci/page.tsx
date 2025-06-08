@@ -1,37 +1,27 @@
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
-import Link from "next/link";
-import { Book, Calendar, Users, GraduationCap, Building } from "lucide-react";
+import { Header } from "../components/header"
+import { Footer } from "../components/footer"
+import Link from "next/link"
+import { Book, Calendar, Users, GraduationCap, Building } from "lucide-react"
 
 const studyPrograms = [
   { name: "Informatyka", level: "Studia I stopnia" },
   { name: "Informatyka", level: "Studia II stopnia" },
   { name: "Telekomunikacja", level: "Studia I stopnia" },
   { name: "Telekomunikacja", level: "Studia II stopnia" },
-  {
-    name: "Cyberbezpieczeństwo",
-    level: "Studia I stopnia",
-    href: "/studenci/programy-studiow/cyberbezpieczenstwo",
-  },
-];
+  { name: "Cyberbezpieczeństwo", level: "Studia I stopnia", href: "/studenci/programy-studiow/cyberbezpieczenstwo" },
+]
 
 const studentGroups = [
-  {
-    name: "Koło Naukowe Informatyków",
-    description:
-      "Grupa skupiająca pasjonatów programowania i nowych technologii.",
-  },
+  { name: "Koło Naukowe Informatyków", description: "Grupa skupiająca pasjonatów programowania i nowych technologii." },
   {
     name: "Koło Naukowe Telekomunikacji",
-    description:
-      "Studenci zainteresowani sieciami i systemami komunikacyjnymi.",
+    description: "Studenci zainteresowani sieciami i systemami komunikacyjnymi.",
   },
   {
     name: "Koło Naukowe Cyberbezpieczeństwa",
-    description:
-      "Grupa zajmująca się zagadnieniami bezpieczeństwa informatycznego.",
+    description: "Grupa zajmująca się zagadnieniami bezpieczeństwa informatycznego.",
   },
-];
+]
 
 export default function Students() {
   return (
@@ -51,10 +41,7 @@ export default function Students() {
                 <div key={index} className="bg-white shadow rounded-lg p-4">
                   <h3 className="font-semibold">{program.name}</h3>
                   <p className="text-gray-600">{program.level}</p>
-                  <Link
-                    href={program.href || "#"}
-                    className="text-[#DB3B2B] hover:underline text-sm"
-                  >
+                  <Link href={program.href || "#"} className="text-[#DB3B2B] hover:underline text-sm">
                     Szczegóły programu
                   </Link>
                 </div>
@@ -84,8 +71,7 @@ export default function Students() {
             </h2>
             <div className="bg-white shadow rounded-lg p-6">
               <p className="mb-4">
-                Zapisy na zajęcia odbywają się poprzez system JSOS (Jednolity
-                System Obsługi Studenta).
+                Zapisy na zajęcia odbywają się poprzez system JSOS (Jednolity System Obsługi Studenta).
               </p>
               <Link href="#" className="text-[#DB3B2B] hover:underline">
                 Przejdź do systemu JSOS
@@ -108,10 +94,7 @@ export default function Students() {
                 <div key={index} className="bg-white shadow rounded-lg p-4">
                   <h3 className="font-semibold">{group.name}</h3>
                   <p className="text-gray-600">{group.description}</p>
-                  <Link
-                    href="#"
-                    className="text-[#DB3B2B] hover:underline text-sm"
-                  >
+                  <Link href="#" className="text-[#DB3B2B] hover:underline text-sm">
                     Dowiedz się więcej
                   </Link>
                 </div>
@@ -133,10 +116,7 @@ export default function Students() {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/studenci/terminy-obron"
-                    className="text-[#DB3B2B] hover:underline"
-                  >
+                  <Link href="/studenci/terminy-obron" className="text-[#DB3B2B] hover:underline">
                     Terminy obron
                   </Link>
                 </li>
@@ -157,5 +137,6 @@ export default function Students() {
       </main>
       <Footer />
     </div>
-  );
+  )
 }
+
